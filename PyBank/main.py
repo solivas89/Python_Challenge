@@ -16,7 +16,7 @@ budget_path = os.path.join("Resources", "budget_data.csv")
 budget_path
 
 
-# In[120]:
+# In[125]:
 
 
 #establish counts and set lists to append into
@@ -59,10 +59,10 @@ with open(budget_path) as csvfile:
     
     #need to find greatest increase in profits (date & amount) in changes index
     grt_incr = max(changes)
-    grt_incr_date = str(months[changes.index(max(changes))])
+    grt_incr_date = (months[changes.index(max(changes))])
     
     grt_decr = min(changes)
-    grt_decr_date = str(months[changes.index(min(changes))])
+    grt_decr_date = (months[changes.index(min(changes))])
     
 # print(total_months)
 # print(net_amount)    
@@ -73,7 +73,7 @@ with open(budget_path) as csvfile:
 # print(grt_decr_date)
 
 
-# In[114]:
+# In[128]:
 
 
 #print out analysis
@@ -86,7 +86,7 @@ print(f"Greatest Increase in Profits: {grt_incr_date} (${grt_incr})")
 print(f"Greatest Decrease in Profits: {grt_decr_date} (${grt_decr})")
 
 
-# In[117]:
+# In[129]:
 
 
 #write rows to txt file
